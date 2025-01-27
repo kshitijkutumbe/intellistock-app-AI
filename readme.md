@@ -1,13 +1,12 @@
 
 
-```markdown
 # IntelliStock: Advanced Equity Analysis
 
 ![Logo](./logo.png)
 
 **IntelliStock** is a powerful, AI-driven stock analysis tool designed for Indian equities. It provides **fundamental analysis**, **technical analysis**, and **AI-powered recommendations** for any given Indian stock. Built with Python, Streamlit, and OpenAI's GPT-4, this app is perfect for investors, traders, and financial enthusiasts.
 
----
+
 
 ## Features
 
@@ -27,7 +26,7 @@
   - Clean, modern, and responsive design.
   - Easy-to-use dropdown for selecting major Indian companies.
 
----
+
 
 ## How to Use
 
@@ -43,14 +42,14 @@
 4. **View Results**:
    - Explore fundamental metrics, technical charts, and AI recommendations.
 
----
+
 
 ## Demo
 
 ![App Screenshot](./screenshot.png)  
 *Example: Analysis of Reliance Industries*
 
----
+
 
 ## Installation
 
