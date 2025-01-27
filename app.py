@@ -143,10 +143,7 @@ def main():
 
     # Sidebar with logo and owner details
     with st.sidebar:
-        st.markdown(f"### Developed by **{APP_OWNER}**")
-        st.markdown(f"📧 **Email:** [{APP_OWNER_EMAIL}](mailto:{APP_OWNER_EMAIL})")
-        st.markdown(f"📝 **Medium:** [Read my articles]({APP_OWNER_MEDIUM})")
-        st.markdown(f"🔗 **LinkedIn:** [Connect with me]({APP_OWNER_LINKEDIN})")
+
         st.markdown("---")
         
         st.title("🔍 Analysis Parameters")
@@ -259,6 +256,10 @@ def main():
 
     # Footer
     st.markdown("---")
+    st.sidebar.markdown(f"### Developed by **{APP_OWNER}**")
+    st.sidebar.markdown(f"📧 **Email:** [{APP_OWNER_EMAIL}](mailto:{APP_OWNER_EMAIL})")
+    st.sidebar.markdown(f"📝 **Medium:** [Read my articles]({APP_OWNER_MEDIUM})")
+    st.sidebar.markdown(f"🔗 **LinkedIn:** [Connect with me]({APP_OWNER_LINKEDIN})")
     st.markdown(f"""
     <div class="footer">
         Developed with ❤️ by <a href="{APP_OWNER_LINKEDIN}" target="_blank">{APP_OWNER}</a> | 
