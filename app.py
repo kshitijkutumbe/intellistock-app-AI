@@ -146,7 +146,7 @@ def main():
 
         st.markdown("---")
         
-        st.title("🔍 Analysis Parameters")
+        st.subheader("🔍 Analysis Parameters")
         api_key = st.text_input("Enter OpenAI API key")
         selected_company = st.selectbox(
             "Select Company",
