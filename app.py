@@ -143,7 +143,7 @@ def main():
 
     # Sidebar with logo and owner details
     with st.sidebar:
-        st.image(LOGO_PATH, width=200)  # Display the logo
+        st.image(LOGO_PATH, width=40)  # Display the logo
         st.markdown(f"### Developed by **{APP_OWNER}**")
         st.markdown(f"📧 **Email:** [{APP_OWNER_EMAIL}](mailto:{APP_OWNER_EMAIL})")
         st.markdown(f"📝 **Medium:** [Read my articles]({APP_OWNER_MEDIUM})")
