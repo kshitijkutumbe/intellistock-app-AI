@@ -7,7 +7,6 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from datetime import datetime
 from openai import OpenAI
-from duckduckgo_search import DDGS
 from serpapi import GoogleSearch
 
 # App Owner Details
@@ -86,27 +85,7 @@ def technical_analysis(data):
         st.error(f"Technical analysis failed: {str(e)}")
         return None
 
-def get_news(query):
-    """Fetch news using DuckDuckGo's official API"""
-    try:
-        news_items = []
-        with DDGS() as ddgs:
-            for result in ddgs.news(
-                keywords=f"{query} stock", 
-                region="in-en", 
-                safesearch="moderate", 
-                timelimit="d",
-                max_results=5
-            ):
-                news_items.append({
-                    "title": result.get('title', 'No title available'),
-                    "url": result.get('url', '#'),
-                    "snippet": result.get('body', 'No description available')
-                })
-        return news_items
-    except Exception as e:
-        st.error(f"News fetch failed: {str(e)}")
-        return []
+
     
 def get_news(query, api_key):
     try:
