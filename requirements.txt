@@ -8,3 +8,6 @@ openai
 matplotlib
 serpapi
 google-search-results
+seaborn
+fpdf2
+vadersentiment
